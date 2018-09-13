@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A74233AA-0615-4D15-B139-B8F11FFAE8BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Kertas.My.MyApplication</StartupObject>
+    <RootNamespace>Kertas</RootNamespace>
+    <AssemblyName>Kertas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Kertas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Kertas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>F:\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Kertas">
+      <HintPath>obj\Debug\Kertas.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database.vb" />
+    <Compile Include="Gudang.Designer.vb">
+      <DependentUpon>Gudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GudangGoodIssue.Designer.vb">
+      <DependentUpon>GudangGoodIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GudangGoodIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GudangGoodReceipt.Designer.vb">
+      <DependentUpon>GudangGoodReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GudangGoodReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeuanganInvoice.Designer.vb">
+      <DependentUpon>KeuanganInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KeuanganInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginVendor.Designer.vb">
+      <DependentUpon>LoginVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGudang.Designer.vb">
+      <DependentUpon>MenuGudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGudang.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuKeuangan.Designer.vb">
+      <DependentUpon>MenuKeuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuKeuangan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuProduksi.Designer.vb">
+      <DependentUpon>MenuProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProduksi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuVendor.Designer.vb">
+      <DependentUpon>MenuVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVendor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProduksiGoodIssue.Designer.vb">
+      <DependentUpon>ProduksiGoodIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProduksiGoodIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeuanganDaftarVendor.Designer.vb">
+      <DependentUpon>KeuanganDaftarVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KeuanganDaftarVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderCreate.Designer.vb">
+      <DependentUpon>SalesOrderCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeuanganRequisition.Designer.vb">
+      <DependentUpon>KeuanganRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KeuanganRequisition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffGudang.Designer.vb">
+      <DependentUpon>StaffGudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffGudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSales.Designer.vb">
+      <DependentUpon>MenuSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NavigasiTop.Designer.vb">
+      <DependentUpon>NavigasiTop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NavigasiTop.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StaffKeuangan.Designer.vb">
+      <DependentUpon>StaffKeuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffKeuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffProduksi.Designer.vb">
+      <DependentUpon>StaffProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffSales.Designer.vb">
+      <DependentUpon>StaffSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.vb">
+      <DependentUpon>Start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorHome.Designer.vb">
+      <DependentUpon>VendorHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VendorHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorPO.Designer.vb">
+      <DependentUpon>VendorPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VendorPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gudang.resx">
+      <DependentUpon>Gudang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GudangGoodIssue.resx">
+      <DependentUpon>GudangGoodIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GudangGoodReceipt.resx">
+      <DependentUpon>GudangGoodReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeuanganInvoice.resx">
+      <DependentUpon>KeuanganInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginVendor.resx">
+      <DependentUpon>LoginVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGudang.resx">
+      <DependentUpon>MenuGudang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuKeuangan.resx">
+      <DependentUpon>MenuKeuangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProduksi.resx">
+      <DependentUpon>MenuProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVendor.resx">
+      <DependentUpon>MenuVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProduksiGoodIssue.resx">
+      <DependentUpon>ProduksiGoodIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeuanganDaftarVendor.resx">
+      <DependentUpon>KeuanganDaftarVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderCreate.resx">
+      <DependentUpon>SalesOrderCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeuanganRequisition.resx">
+      <DependentUpon>KeuanganRequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffGudang.resx">
+      <DependentUpon>StaffGudang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSales.resx">
+      <DependentUpon>MenuSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigasiTop.resx">
+      <DependentUpon>NavigasiTop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffKeuangan.resx">
+      <DependentUpon>StaffKeuangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffProduksi.resx">
+      <DependentUpon>StaffProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffSales.resx">
+      <DependentUpon>StaffSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorHome.resx">
+      <DependentUpon>VendorHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorPO.resx">
+      <DependentUpon>VendorPO.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
